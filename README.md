@@ -1,9 +1,11 @@
 # zero2BGD
 
-Batch gradient descent
-Vanilla gradient descent, aka batch gradient descent, computes the gradient of the cost function w.r.t. to the parameters θfor the entire training dataset:
+![BGD.png](https://images2015.cnblogs.com/blog/764050/201512/764050-20151230190320667-1412088485.png)
 
-θ=θ−η⋅∇θJ(θ).
+Batch gradient descent
+Vanilla gradient descent, aka batch gradient descent, computes the gradient of the cost function w.r.t. to the parameters **θ** for the entire training dataset:
+
+**θ=θ−η⋅∇θJ(θ).**
 
 As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory. Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
 
@@ -20,4 +22,4 @@ We then update our parameters in the opposite direction of the gradients with th
 
 
 **LICENSE**
-- [MIT]()
+- [MIT](https://github.com/Lornatang/zero2BGD/blob/master/LICENSE)
