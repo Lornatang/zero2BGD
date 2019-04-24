@@ -30,11 +30,10 @@ i = 1
 while np.abs(new_losses - losses) > tol_L:
   beta = update_beta(beta, lr, grad)
   grad = compute_grad_bgd(beta, x, y)
-  if i % 100 == 0:
-    losses = new_losses
-    new_losses = loss(beta, x, y)
-    print(f'Iter {i} SGD loss {abs(new_losses - losses):.6f}')
+  losses = new_losses
+  new_losses = loss(beta, x, y)
   i += 1
+  print(f'Iter {i} SGD loss {abs(new_losses - losses):.6f}')
 
 
 val = LinearRegression()
