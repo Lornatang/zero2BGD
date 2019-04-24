@@ -19,7 +19,7 @@ max_x = max(train['id'])
 x = train['id'] / max_x
 y = train['questions']
 
-# let's do the first calculation
+# do the first calculation
 np.random.seed(10)
 grad = compute_grad_bgd(beta, x, y)
 losses = loss(beta, x, y)
